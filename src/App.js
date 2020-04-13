@@ -1,16 +1,14 @@
 import React from 'react';
+import NumberPad from './NumberPad';
+import Display from './Display';
 import './App.css';
 
 function App() {
-  const value = 10;
   return (
     <div className="App">
       <header className="App-header">
-
-        <button className="square" onClick={() => { alert('Hi') }}>
-          {value}
-        </button>
-
+        <Display value={100} />
+        <NumberPad />
       </header>
     </div>
   );
