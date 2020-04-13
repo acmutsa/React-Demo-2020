@@ -2,10 +2,10 @@ import React from 'react'
 import "./App.css"
 
 function Square(props) {
-    const { value } = props;
+    const { number, value, onChange } = props;
 
-    return <button className="square" onClick={() => { alert('Hi') }}>
-        {value}
+    return <button className="square" onClick={() => { onChange(value, number) }}>
+        {number}
     </button>
 
 }
