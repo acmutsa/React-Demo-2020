@@ -2,9 +2,9 @@ import React from 'react'
 import "./App.css"
 
 function Square(props) {
-    const { number, value, onChange } = props;
+    const { number, onChange } = props;
 
-    return <button className="square" onClick={() => { onChange(value, number) }}>
+    return <button className="square" onClick={() => { onChange(number) }}>
         {number}
     </button>
 

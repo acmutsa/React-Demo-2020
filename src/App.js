@@ -6,17 +6,21 @@ import './App.css';
 function App() {
   const [value, setValue] = useState(0);
 
-  const valueHandler = (value, number) => {
+  const valueHandler = (number) => {
     if (value >= 1000)
       return;
     setValue(value * 10 + number);
+  }
+
+  const clearHandler = () => {
+    setValue(0);
   }
 
   return (
     <div className="App">
       <header className="App-header">
         <Display value={value} />
-        <NumberPad value={value} onValueChange={valueHandler} />
+        <NumberPad onValueChange={valueHandler} onClear={clearHandler} />
       </header>
     </div>
   );
