@@ -1,3 +1,9 @@
+.square {
+  height: 10vmin;
+  width: 10vmin;
+  font-size: 1em;
+}
+
 .App {
   text-align: center;
 }
@@ -32,6 +38,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
